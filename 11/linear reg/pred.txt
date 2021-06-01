@@ -1,0 +1,9 @@
+[1] "#prediction"
+[1] "intercept:"
+[1] 49.80615
+[1] "w coefficient:"
+[1] -0.03797
+[1] "w random value:"
+[1] 37
+[1] "predicted h:"
+[1] 48.40126

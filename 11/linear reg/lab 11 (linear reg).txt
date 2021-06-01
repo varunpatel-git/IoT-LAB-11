@@ -1,0 +1,19 @@
+> # save output in file
+> sink(file = "pred.txt")
+> print("#prediction")
+> print(intercept:)
+Error: unexpected ')' in "print(intercept:)"
+> print("intercept:")
+> intercept = 49.80615
+> intercept
+> print("w coefficient:")
+> w_coeff = -0.03797
+> w_coeff
+> # w random value
+> w_rand = 37
+> print("w random value:")
+> w_rand
+> h_pred = (intercept) + (w_coeff)*(w_rand)
+> print("predicted h:")
+> h_pred
+> sink(file = NULL)
