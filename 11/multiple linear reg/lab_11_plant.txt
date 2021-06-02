@@ -1,0 +1,13 @@
+[1] "Model summary"
+Intercept:  36.13847 
+Date coeff:  0.05798 
+Time coeff:  -0.02549 
+Location coeff:  0.07606 
+Humidity coeff:  -0.01084 
+Temperature coeff:  0.06394 
+Soil moisture coeff:  0.01673 
+Light intensifunction (save = "default", status = 0, runLast = TRUE) 
+.Internal(quit(save, status, runLast))
+<bytecode: 0x0000021ce20e1330>
+<environment: namespace:base>
+redicted production:  46.92492

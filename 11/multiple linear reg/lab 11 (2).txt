@@ -1,0 +1,95 @@
+date
+time
+location
+humidity
+temperature
+soil_moisture
+light_intensity
+production
+
+CONSOLE CODE:-
+sink(file = "lab_11_plant.txt")
+print("Model summary")
+intercept = 36.13847
+cat("Intercept: " , intercept, "\n")
+date_coeff = 0.05798
+cat("Date coeff: " , date_coeff, "\n")
+time_coeff = -0.02549
+cat("Time coeff: " , time_coeff, "\n")
+location_coeff = 0.07606
+cat("Location coeff: " , location_coeff, "\n")
+humidity_coeff = -0.01084
+cat("Humidity coeff: " , humidity_coeff, "\n")
+temperature_coeff = 0.06394
+cat("Temperature coeff: " , temperature_coeff, "\n")
+soil_moisture_coeff = 0.01673
+cat("Soil moisture coeff: " , soil_moisture_coeff, "\n")
+light_intensity_coeff = 0.06516
+cat("Light intensity coeff: " , light_intensity_coeff, "\n")
+
+#################################################
+
+# independent variables random values
+print("Random values")
+date_e = 89
+cat("Date: " , date_e, "\n")
+time_e = 12
+cat("Time: " , time_e, "\n")
+location_e = 45
+cat("Location: " , location_e, "\n")
+humidity_e = 65
+cat("Humidity: " , humidity_e, "\n")
+temperature_e = 5
+cat("Temperature: " , temperature_e, "\n")
+soil_moisture_e = 99
+cat("Soil moisture: " , soil_moisture_e, "\n")
+light_intensity_e = 19
+cat("Light intensity: " , light_intensity_e, "\n")
+
+#################################################
+
+# prediction
+production_e = (intercept) + (date_coeff)*(date_e) + (time_coeff)*(time_e) + (location_coeff)*(location_e) + (humidity_coeff)*(humidity_e) + (temperature_coeff)*(temperature_e) + (soil_moisture_coeff)*(soil_moisture_e) + (light_intensity_coeff)*(light_intensity_e)
+cat("Predicted production: " , production_e)
+sink(file = NULL)
+
+#################################################
+
+> sink(file = "lab_11_plant.txt")
+> print("Model summary")
+> intercept = 36.13847
+> cat("Intercept: " , intercept, "\n")
+> date_coeff = 0.05798
+> cat("Date coeff: " , date_coeff, "\n")
+> time_coeff = -0.02549
+> cat("Time coeff: " , time_coeff, "\n")
+> location_coeff = 0.07606
+> cat("Location coeff: " , location_coeff, "\n")
+> humidity_coeff = -0.01084
+> cat("Humidity coeff: " , humidity_coeff, "\n")
+> temperature_coeff = 0.06394
+> cat("Temperature coeff: " , temperature_coeff, "\n")
+> soil_moisture_coeff = 0.01673
+> cat("Soil moisture coeff: " , soil_moisture_coeff, "\n")
+> light_intensity_coeff = 0.06516
+> cat("Light intensity coeff: " , light_intensity_coeff, "\n")
+> # independent variables random values
+> print("Random values")
+> date_e = 89
+> cat("Date: " , date_e, "\n")
+> time_e = 12
+> cat("Time: " , time_e, "\n")
+> location_e = 45
+> cat("Location: " , location_e, "\n")
+> humidity_e = 65
+> cat("Humidity: " , humidity_e, "\n")
+> temperature_e = 5
+> cat("Temperature: " , temperature_e, "\n")
+> soil_moisture_e = 99
+> cat("Soil moisture: " , soil_moisture_e, "\n")
+> light_intensity_e = 19
+> cat("Light intensity: " , light_intensity_e, "\n")
+> # prediction
+> production_e = (intercept) + (date_coeff)*(date_e) + (time_coeff)*(time_e) + (location_coeff)*(location_e) + (humidity_coeff)*(humidity_e) + (temperature_coeff)*(temperature_e) + (soil_moisture_coeff)*(soil_moisture_e) + (light_intensity_coeff)*(light_intensity_e)
+> cat("Predicted production: " , production_e)
+> sink(file = NULL)
